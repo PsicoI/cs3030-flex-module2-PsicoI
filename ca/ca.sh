@@ -5,7 +5,6 @@ ts=`date +%Y-%m-%d`
 year=`date +%Y`
 month=`date +%m`
 day=`date +%d`
-log_folder="log/${year}/${month}/${day}"
 
 help()
 {
