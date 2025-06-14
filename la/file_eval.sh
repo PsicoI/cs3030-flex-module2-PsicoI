@@ -1,20 +1,34 @@
 #!/usr/bin/env bash
 
 # Represents the file that you want to test. 
+FILE="sales.csv"
+DATAFOLDER="data"
 # Replace file_name with the target file's name to test.
-FILE="file_name"
 # Operator - The file test operator to use.
-if [ Operator $FILE ]
+if [ -e $FILE ]
 
 then
  # Tasks to perform if the Operator returns true.
- do something
+    echo "$FILE exists"
 
 else
  # Tasks to perform if the Operator returns false.
- do something
-
+ echo "File does not exist. Sorry Captain."
+ echo "TAKING ACTION! Creating $FILE in working directory" 
+touch $FILE
 fi
+
+# Check if a data folder exists.
+if [[ ! -d $DATAFOLDER ]];
+then
+echo "$DATAFOLDER does not exist. Creating new directory"
+    mkdir $DATAFOLDER
+echo "MOVING $FILE into $DATAFOLDER"
+    mv $FILE $DATAFOLDER
+else
+rmdir $DATAFOLDER
+fi
+# If not, create it, then, move $FILE to it
 
 
 exit 0
