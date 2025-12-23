@@ -4,7 +4,7 @@
 # function hello()
 hello()
 {
- echo "Hello from function"
+ echo "Hello from Cody's function"
 
 }
 

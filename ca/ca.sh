@@ -122,7 +122,7 @@ filter_files() {
           cp "$file" "$logdir/"
           echo "Copied $filename to $logdir/"
             fi
-        fi
+        fiz
     done
     no_pattern -u nullglob
 }
