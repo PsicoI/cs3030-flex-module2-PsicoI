@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Author: Cody Turek
-# Date: 2025-June-13
+# Date: 2025-December-23
 # Module 2: Challenege Activity: FILE-FILTER3000
 
 # opt_a=${low_bound}${high_bound}${file_ext} DEPRECATED
